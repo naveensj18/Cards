@@ -1,0 +1,70 @@
+.card-details {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 250px;
+  text-align: center;
+}
+
+.card-image {
+  width: 80%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card-name {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.attributes-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.attribute {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.column {
+  width: calc(
+    50% - 5px
+  ); /* Each column takes up 50% of the container width with a small space between */
+  margin-right: 5px; /* Adjust as needed */
+}
+
+.attribute-button {
+  background-color: #78b4f5;
+  color: #0c0707;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.attribute-button:hover {
+  background-color: #0056b3;
+}
+
+.attribute-button:disabled {
+  background-color: #007bff;
+}
+
+.attribute-name {
+  font-weight: bold;
+}
+
+.attribute-value {
+  margin-left: 5px;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+}

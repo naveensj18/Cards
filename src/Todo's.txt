@@ -1,0 +1,55 @@
+Todo's:
+
+Feature:
+1. set timeout for displaying computer card 
+2. difficulty level - P1 - done
+3. choose number of cards - P1 - done 
+4. timer for each round - p3 
+5. Visibility to user on next cards in the queue - p3 
+6. draw deck for each round - p3 (not required for play online)
+
+Style:
+1. highlight winning attribute - P1 
+2. cards should be displayed horizontally - done 
+3. Images of players - fetch images from one - done 
+4. two column attributes - required: refactor no.1 - done
+5. Mobile view - P1
+6. Add style for each page - Mode, Home, Game - p2
+
+Fixes:
+1. randomAttribute for computer - done
+2. Move name to h3 - done 
+3. whitelisting attribute - required: refactor no.1 - done 
+4. setCurrentAttribute(getBestAttribute(computerCards[1].Attributes)) - This needs to be fixed, it should not be hardcoded - P0 
+   fixed with short term hack 
+5. download images offline, search images of not available - p2 
+6. change deck, cards to useRef - p1 (not good idea)
+
+git:
+1. Follow the practice of create branch and merge in git 
+
+Refactor: 
+1. To accommodate attributes irrespective of sport - done 
+2. Create components for score, result, other buttons - P2
+3. seperate utils for difficulty and assignDeck - P2 
+
+Explore: 
+1. multiplayer options 
+2. usage of effect, ref, reducer  
+
+Route pages: 
+-home: (ask for game mode)
+    -computer: (ask for sport type and difficulty)
+        -game_with_computer 
+    -friends: (ask for sport type and no. of players)
+        -game_with_friends
+    
+
+
+components -> choice, game, result 
+states -> start, gameOver
+
+choices -> difficulty, numberOfCards
+
+
+
