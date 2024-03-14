@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Home.css"; // Assuming your CSS file is named Home.css
 
 function Home() {
@@ -6,14 +7,14 @@ function Home() {
     <nav className="navbar">
       <ul className="nav-list">
         <li className="nav-item">
-          <a href={`/Mode`} className="nav-link">
+          <Link to="/Mode" className="nav-link">
             Play Online
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a href={`/`} className="nav-link">
+          <Link to="/" className="nav-link">
             Play with friends
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
