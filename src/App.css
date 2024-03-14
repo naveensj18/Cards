@@ -68,3 +68,37 @@
   display: flex;
   flex-wrap: wrap; /* Allow cards to wrap to the next line */
 }
+
+.round-results {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+  display: flex;
+  align-items: center; /* Align vertically */
+  justify-content: center; /* Align horizontally */
+}
+
+/* Add this to your existing CSS */
+.next-round {
+  background-color: #f98d00;
+  color: #0c0707;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+.next-round-container {
+  display: flex;
+  align-items: center; /* Align vertically */
+  justify-content: center; /* Align horizontally */
+}
+.next-round:hover {
+  background-color: #e48f53;
+}
+
+.next-round:disabled {
+  background-color: #f19d53;
+}

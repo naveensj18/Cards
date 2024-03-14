@@ -105,7 +105,7 @@ function Game({ difficulty, numberOfCards }) {
       setGameOver(true);
       userFinalScore += 1;
     } else if (userScore === 0) {
-      setGameResult("better luck next time");
+      setGameResult("Better luck next time!");
       setGameOver(true);
       computerFinalScore += 1;
     }
@@ -116,7 +116,7 @@ function Game({ difficulty, numberOfCards }) {
   };
 
   return (
-    <>
+    <div className="body">
       <div className="board">
         <section className="card">
           {!gameOver && (
@@ -134,23 +134,35 @@ function Game({ difficulty, numberOfCards }) {
         </section>
       </div>
 
-      {userClick && !gameOver && <p>current attribute: {currentAttribute}</p>}
-      <p className="font-colour">
-        You have {userScore.current} cards remaining
-      </p>
-      <p>Computer has {computerScore.current} cards remaining</p>
+      {userClick && !gameOver && (
+        <p className="round-results">current attribute: {currentAttribute}</p>
+      )}
 
       {!gameOver && (
-        <button
-          onClick={() => {
-            reassignCards(currentAttribute),
-              evaluateResult(userScore.current, computerScore.current);
-          }}
-          disabled={!userClick}
-        >
-          Next round
-        </button>
+        <div>
+          <p className="round-results">
+            You have {userScore.current} cards remaining
+          </p>
+          <p className="round-results">
+            Computer has {computerScore.current} cards remaining
+          </p>
+        </div>
       )}
+
+      <div className="next-round-container">
+        {!gameOver && (
+          <button
+            className="next-round"
+            onClick={() => {
+              reassignCards(currentAttribute),
+                evaluateResult(userScore.current, computerScore.current);
+            }}
+            disabled={!userClick}
+          >
+            Next round
+          </button>
+        )}
+      </div>
 
       {gameOver && (
         <Result
@@ -162,7 +174,7 @@ function Game({ difficulty, numberOfCards }) {
           handleExit={handleExit}
         />
       )}
-    </>
+    </div>
   );
 }
 
