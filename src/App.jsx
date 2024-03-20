@@ -4,6 +4,7 @@ import Home from "./pages/HomePage/Home";
 import Game from "./pages/GamePage/Game";
 import Mode from "./pages/Mode/Mode";
 import { Choice } from "./pages/Mode/Choice";
+import TwoPlayerMode from "./pages/TwoPlayer/TwoPlayerMode";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/Mode" element={<Mode />} />
       <Route path="/Game" element={<Choice />} />
+      <Route path="/TwoPlayerMode" element={<TwoPlayerMode />} />
     </Routes>
   );
 }

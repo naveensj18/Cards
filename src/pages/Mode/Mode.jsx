@@ -60,7 +60,6 @@ function Mode() {
               value="hard"
               checked={formData.difficulty === "hard"}
               onChange={handleInputChange}
-              disabled
             />
             Hard
           </label>

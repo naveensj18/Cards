@@ -9,9 +9,6 @@ import { Result } from "../../components/Result";
 import { userWins } from "../../utils/userWins";
 import { getAttributeBasedOnDifficulty } from "../../utils/difficulty";
 
-// const n = 8;
-// let userScore.current = n / 2;
-// let computerScore.current = n / 2;
 let userFinalScore = 0;
 let computerFinalScore = 0;
 
@@ -28,12 +25,16 @@ function Game({ difficulty, numberOfCards }) {
   const [gameResult, setGameResult] = useState("");
   let userScore = useRef(numberOfCards);
   let computerScore = useRef(numberOfCards);
+  let userWinningRound = useRef(0);
+  let currentRound = useRef(0);
+  let memory = useRef({});
 
   // console.log("At the start of rendering\n");
   // console.log(userCards);
   // console.log(computerCards);
 
   function reassignCards(attribute) {
+    currentRound.current += 1;
     if (
       userWins(
         userCards[0]["Attributes"],
@@ -50,6 +51,19 @@ function Game({ difficulty, numberOfCards }) {
       setUserClick(false);
       userScore.current += 1;
       computerScore.current -= 1;
+      memory[userWinningRound.current + numberOfCards + 1] =
+        computerCards[0].Attributes;
+      memory[userWinningRound.current + numberOfCards + 2] =
+        userCards[0].Attributes;
+      userWinningRound.current += 2;
+      console.log("User winning", typeof currentRound, typeof userWinningRound);
+      console.log(
+        memory,
+        "currentRound ->",
+        currentRound.current,
+        "userwinninground ->",
+        userWinningRound.current
+      );
     } else {
       setComputerCards((prevComputerCards) => [
         ...prevComputerCards.slice(1),
@@ -61,25 +75,20 @@ function Game({ difficulty, numberOfCards }) {
       // setCurrentAttribute(getRandomAttribute);
       // console.log(computerCards[1].Attributes);
       if (computerCards.length == 1) {
-        console.log("choosing random..", computerCards[1].Name);
         setCurrentAttribute(getRandomAttribute);
       } else {
-        console.log("choosing best..", computerCards[1].Name);
         setCurrentAttribute(
-          getAttributeBasedOnDifficulty(difficulty, computerCards[1].Attributes)
+          getAttributeBasedOnDifficulty(
+            difficulty,
+            computerCards[1].Attributes,
+            memory,
+            currentRound.current
+          )
         );
       }
       computerScore.current += 1;
       userScore.current -= 1;
     }
-    // console.log(
-    //   "userCards",
-    //   userCards.map((player) => player.Name)
-    // );
-    // console.log(
-    //   "computerCards",
-    //   computerCards.map((player) => player.Name)
-    // );
   }
 
   function handleUserClick(attribute) {
@@ -97,6 +106,9 @@ function Game({ difficulty, numberOfCards }) {
     setUserClick(false);
     userScore.current = numberOfCards;
     computerScore.current = numberOfCards;
+    userWinningRound.current = 0;
+    currentRound.current = 0;
+    memory.current = {};
   }
 
   function evaluateResult(userScore, computerScore) {

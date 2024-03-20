@@ -13,6 +13,6 @@ export const attributeTypes = {
   Wkts: "HIGH",
   BBI: "SPL",
   BwAvg: "LOW",
-  Fifer: "HIGH",
+  Fifers: "HIGH",
   Catch: "HIGH",
 };

@@ -1,6 +1,8 @@
 import { players } from "./constants/ipl";
 import { attributeTypes } from "./constants/attributeTypes";
 import { BBI } from "./utils/BBI";
+import { memo } from "react";
+import { userWins } from "./utils/userWins";
 
 let availableAttributes = Object.keys(players[0].Attributes);
 export function shuffleDeck(players) {
@@ -87,4 +89,40 @@ export function getBestAttribute(selectedAttributes) {
   }
 
   return maxKey;
+}
+
+export function getAttributeFromMemory(
+  memory,
+  currentRound,
+  computerCardAttributes
+) {
+  let userCardAttributes = memory[currentRound + 1];
+  // console.log(
+  //   "checking if exists in memory ...",
+  //   "currenRound ->",
+  //   currentRound,
+  //   "userCard ->",
+  //   userCardAttributes,
+  //   "computerCard ->",
+  //   computerCardAttributes
+  // );
+  if (currentRound + 1 in memory) {
+    for (var i = 0; i < availableAttributes.length; i++) {
+      if (
+        userCardAttributes[availableAttributes[i]] ===
+        computerCardAttributes[availableAttributes[i]]
+      ) {
+        continue;
+      } else if (
+        !userWins(
+          userCardAttributes,
+          computerCardAttributes,
+          availableAttributes[i]
+        )
+      ) {
+        return availableAttributes[i];
+      }
+    }
+  }
+  return null;
 }

@@ -102,3 +102,27 @@
 .next-round:disabled {
   background-color: #b6b1ae;
 }
+
+.card-image {
+  /* Set initial styles for the image */
+  width: 200px; /* Adjust width and height as needed */
+  height: 200px;
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.card-image.loading {
+  /* Styles for the placeholder image (e.g., spinner) */
+  background-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="); /* Replace with your placeholder image URL or base64 code */
+  background-repeat: center;
+  background-size: 50px 50px; /* Adjust size of the spinner */
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

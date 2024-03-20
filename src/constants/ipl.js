@@ -97,7 +97,8 @@ export const players = [
   },
   {
     Name: "Suresh Raina",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Suresh%20Raina.png",
+    Image:
+      "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/ipl/284/14.png",
     Attributes: {
       Mat: 205,
       Runs: 5528,
@@ -178,7 +179,8 @@ export const players = [
   },
   {
     Name: "AB de Villiers",
-    Image: "https://scores.iplt20.com/ipl/playerimages/AB%20de%20Villiers.png",
+    Image:
+      "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/ipl/284/233.png",
     Attributes: {
       Mat: 184,
       Runs: 5162,
@@ -226,7 +228,8 @@ export const players = [
   },
   {
     Name: "Yusuf Pathan",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Yusuf%20Pathan.png",
+    Image:
+      "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/ipl/284/96.png",
     Attributes: {
       Mat: 174,
       Runs: 3204,
@@ -370,7 +373,8 @@ export const players = [
   },
   {
     Name: "Gautam Gambhir",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Gautam%20Gambhir.png",
+    Image:
+      "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/ipl/284/84.png",
     Attributes: {
       Mat: 154,
       Runs: 4217,
@@ -418,7 +422,8 @@ export const players = [
   },
   {
     Name: "Shane Watson",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Shane%20Watson.png",
+    Image:
+      "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/ipl/284/227.png",
     Attributes: {
       Mat: 145,
       Runs: 3874,
@@ -466,7 +471,8 @@ export const players = [
   },
   {
     Name: "Parthiv Patel",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Parthiv%20Patel.png",
+    Image:
+      "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/ipl/284/44.png",
     Attributes: {
       Mat: 139,
       Runs: 2848,
@@ -514,7 +520,8 @@ export const players = [
   },
   {
     Name: "Yuvraj Singh",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Yuvraj%20Singh.png",
+    Image:
+      "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/ipl/284/113.png",
     Attributes: {
       Mat: 132,
       Runs: 2750,
@@ -642,7 +649,7 @@ export const players = [
   },
   {
     Name: "Praveen Kumar",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Praveen%20Kumar.png",
+    Image: "https://im.rediff.com/cricket/2013/apr/15praveen-kumar.jpg",
     Attributes: {
       Mat: 119,
       Runs: 340,
@@ -690,7 +697,8 @@ export const players = [
   },
   {
     Name: "Naman Ojha",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Naman%20Ojha.png",
+    Image:
+      "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/ipl/284/52.png",
     Attributes: {
       Mat: 113,
       Runs: 1554,
@@ -770,7 +778,8 @@ export const players = [
   },
   {
     Name: "Brendon McCullum",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Brendon%20McCullum.png",
+    Image:
+      "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/ipl/284/202.png",
     Attributes: {
       Mat: 109,
       Runs: 2880,
@@ -818,7 +827,8 @@ export const players = [
   },
   {
     Name: "Murali Vijay",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Murali%20Vijay.png",
+    Image:
+      "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/ipl/284/7.png",
     Attributes: {
       Mat: 106,
       Runs: 2619,
@@ -850,7 +860,8 @@ export const players = [
   },
   {
     Name: "Vinay Kumar",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Vinay%20Kumar.png",
+    Image:
+      "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/ipl/284/166.png",
     Attributes: {
       Mat: 105,
       Runs: 310,
@@ -866,7 +877,8 @@ export const players = [
   },
   {
     Name: "Virender Sehwag",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Virender%20Sehwag.png",
+    Image:
+      "https://img.bleacherreport.net/img/images/photos/002/916/407/hi-res-8ee7c505e48dbb5eb8bcf7168c2d74af_crop_exact.jpg?w=1200&h=1200&q=75",
     Attributes: {
       Mat: 104,
       Runs: 2728,
@@ -882,7 +894,7 @@ export const players = [
   },
   {
     Name: "Irfan Pathan",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Irfan%20Pathan.png",
+    Image: "https://im.rediff.com/cricket/2016/jan/25irfan1.jpg",
     Attributes: {
       Mat: 103,
       Runs: 1139,
@@ -898,7 +910,8 @@ export const players = [
   },
   {
     Name: "Steven Smith",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Steven%20Smith.png",
+    Image:
+      "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/ipl/284/271.png",
     Attributes: {
       Mat: 103,
       Runs: 2485,
@@ -946,7 +959,8 @@ export const players = [
   },
   {
     Name: "Zaheer Khan",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Zaheer%20Khan.png",
+    Image:
+      "https://www.sportzpics.co.za/img-get2/I0000zv1pNcJzkRg/fit=1000x750/Zaheer-Khan.jpg",
     Attributes: {
       Mat: 100,
       Runs: 117,
@@ -978,7 +992,8 @@ export const players = [
   },
   {
     Name: "Jacques Kallis",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Jacques%20Kallis.png",
+    Image:
+      "https://upload.wikimedia.org/wikipedia/commons/f/ff/Jacques_Kallis_1.jpg",
     Attributes: {
       Mat: 98,
       Runs: 2427,
@@ -1010,7 +1025,8 @@ export const players = [
   },
   {
     Name: "Manoj Tiwary",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Manoj%20Tiwary.png",
+    Image:
+      "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/ipl/284/89.png",
     Attributes: {
       Mat: 98,
       Runs: 1695,
@@ -1026,7 +1042,7 @@ export const players = [
   },
   {
     Name: "Jos Buttler",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Joseph%20Buttler.png",
+    Image: "https://scores.iplt20.com/ipl/playerimages/Jos%20Buttler.png",
     Attributes: {
       Mat: 96,
       Runs: 3223,
@@ -1042,7 +1058,8 @@ export const players = [
   },
   {
     Name: "Quinton de Kock",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Quinton%20de%20Kock.png",
+    Image:
+      "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/170.png",
     Attributes: {
       Mat: 96,
       Runs: 2907,
@@ -1058,8 +1075,7 @@ export const players = [
   },
   {
     Name: "Subramaniam Badrinath",
-    Image:
-      "https://scores.iplt20.com/ipl/playerimages/Subramaniam%20Badrinath.png",
+    Image: "https://timesofindia.indiatimes.com/photo/5702821.cms",
     Attributes: {
       Mat: 95,
       Runs: 1441,
@@ -1075,7 +1091,8 @@ export const players = [
   },
   {
     Name: "Rajat Bhatia",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Rajat%20Bhatia.png",
+    Image:
+      "https://www.sportzpics.co.za/img-get2/I0000mP3.levFhKM/fit=1000x750/Rajat-Bhatia.jpg",
     Attributes: {
       Mat: 95,
       Runs: 342,
@@ -1091,7 +1108,8 @@ export const players = [
   },
   {
     Name: "Stuart Binny",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Stuart%20Binny.png",
+    Image:
+      "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/ipl/284/148.png",
     Attributes: {
       Mat: 95,
       Runs: 880,
@@ -1107,7 +1125,8 @@ export const players = [
   },
   {
     Name: "Kedar Jadhav",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Kedar%20Jadhav.png",
+    Image:
+      "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/ipl/284/297.png",
     Attributes: {
       Mat: 95,
       Runs: 1208,
@@ -1123,7 +1142,8 @@ export const players = [
   },
   {
     Name: "Dale Steyn",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Dale%20Steyn.png",
+    Image:
+      "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/ipl/284/180.png",
     Attributes: {
       Mat: 95,
       Runs: 167,
@@ -1155,7 +1175,8 @@ export const players = [
   },
   {
     Name: "Saurabh Tiwary",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Saurabh%20Tiwary.png",
+    Image:
+      "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/ipl/284/163.png",
     Attributes: {
       Mat: 93,
       Runs: 1494,
@@ -1203,7 +1224,7 @@ export const players = [
   },
   {
     Name: "Pragyan Ojha",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Pragyan%20Ojha.png",
+    Image: "https://timesofindia.indiatimes.com/photo/5829911.cms",
     Attributes: {
       Mat: 92,
       Runs: 16,
@@ -1251,7 +1272,8 @@ export const players = [
   },
   {
     Name: "Albie Morkel",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Albie%20Morkel.png",
+    Image:
+      "https://crickettimes.com/wp-content/uploads/2019/01/Albie-Morkel.jpg",
     Attributes: {
       Mat: 91,
       Runs: 974,
@@ -1283,7 +1305,7 @@ export const players = [
   },
   {
     Name: "Dwayne Smith",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Dwayne%20Smith.png",
+    Image: "https://api.bdcrictime.com/dwayne-smith-20_04_2022.jpg",
     Attributes: {
       Mat: 91,
       Runs: 2385,
@@ -1299,7 +1321,8 @@ export const players = [
   },
   {
     Name: "Rahul Dravid",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Rahul%20Dravid.png",
+    Image:
+      "https://bl-i.thgim.com/public/migration_catalog/article18033556.ece/alternates/FREE_1200/royals",
     Attributes: {
       Mat: 89,
       Runs: 2174,
@@ -1347,7 +1370,8 @@ export const players = [
   },
   {
     Name: "Ashish Nehra",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Ashish%20Nehra.png",
+    Image:
+      "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201506/nehra-647_060515094713.jpg?VersionId=8YyZLkMtFXkK5WSwRiHSzEP7UStN8UU9",
     Attributes: {
       Mat: 88,
       Runs: 41,
@@ -1379,7 +1403,8 @@ export const players = [
   },
   {
     Name: "JP Duminy",
-    Image: "https://scores.iplt20.com/ipl/playerimages/JP%20Duminy.png",
+    Image:
+      "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/ipl/284/182.png",
     Attributes: {
       Mat: 83,
       Runs: 2029,
@@ -1395,7 +1420,8 @@ export const players = [
   },
   {
     Name: "Eoin Morgan",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Eoin%20Morgan.png",
+    Image:
+      "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/ipl/284/197.png",
     Attributes: {
       Mat: 83,
       Runs: 1405,
@@ -1411,7 +1437,8 @@ export const players = [
   },
   {
     Name: "RP Singh",
-    Image: "https://scores.iplt20.com/ipl/playerimages/RP%20Singh.png",
+    Image:
+      "https://i.pinimg.com/474x/71/46/45/7146458d1f0fbe07568d71a9be8cb1b6.jpg",
     Attributes: {
       Mat: 82,
       Runs: 52,
@@ -1442,8 +1469,9 @@ export const players = [
     },
   },
   {
-    Name: "Christopher Morris",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Chris%20Morris.png",
+    Name: "Chris Morris",
+    Image:
+      "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/ipl/284/836.png",
     Attributes: {
       Mat: 81,
       Runs: 618,
@@ -1475,7 +1503,7 @@ export const players = [
   },
   {
     Name: "Adam Gilchrist",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Adam%20Gilchrist.png",
+    Image: "https://timesofindia.indiatimes.com/photo/12594754.cms",
     Attributes: {
       Mat: 80,
       Runs: 2069,
@@ -1492,7 +1520,7 @@ export const players = [
   {
     Name: "Mahela Jayawardene",
     Image:
-      "https://scores.iplt20.com/ipl/playerimages/Mahela%20Jayawardene.png",
+      "https://www.mumbaiindians.com/static-assets/waf-images/6d/3e/4f/4-3/592-444/pgpNGs8vKR.jpg",
     Attributes: {
       Mat: 80,
       Runs: 1802,
@@ -1524,7 +1552,8 @@ export const players = [
   },
   {
     Name: "Ashok Dinda",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Ashok%20Dinda.png",
+    Image:
+      "https://www.financialexpress.com/wp-content/uploads/2017/04/ashok-dinda.jpg?w=920",
     Attributes: {
       Mat: 78,
       Runs: 26,
@@ -1540,7 +1569,8 @@ export const players = [
   },
   {
     Name: "Sachin Tendulkar",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Sachin%20Tendulkar.png",
+    Image:
+      "https://keepingscore.blogs.time.com/wp-content/uploads/sites/6/2012/05/sachin-tendulkar.jpg?w=480&h=320&crop=1",
     Attributes: {
       Mat: 78,
       Runs: 2334,
@@ -1588,7 +1618,8 @@ export const players = [
   },
   {
     Name: "Siddharth Trivedi",
-    Image: "https://scores.iplt20.com/ipl/playerimages/Siddharth%20Trivedi.png",
+    Image:
+      "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_800,q_50/lsci/db/PICTURES/CMS/156800/156853.jpg",
     Attributes: {
       Mat: 76,
       Runs: 42,

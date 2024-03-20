@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+import { useState } from "react";
 
 function Attribute({ attribute, value, onClick, isDisabled }) {
   return (
@@ -18,6 +19,7 @@ function Attribute({ attribute, value, onClick, isDisabled }) {
 
 export const CardDetails = ({ data, user, handleUserClick, userClick }) => {
   const { Image, Name, Attributes } = data;
+  const [isLoading, setIsLoading] = useState(true);
   const defaultImage =
     "https://scores.iplt20.com/ipl/images/default-player-statsImage.png";
 
@@ -31,9 +33,9 @@ export const CardDetails = ({ data, user, handleUserClick, userClick }) => {
       <img
         src={Image}
         alt={Name}
-        className="card-image"
+        className={`card-image ${isLoading ? "loading" : ""}`}
+        onLoad={() => setIsLoading(false)}
         onError={(e) => {
-          // console.log(Image, "is Invalid URL");
           e.target.src = defaultImage;
           e.onError = null;
         }}
