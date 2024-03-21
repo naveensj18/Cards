@@ -53,5 +53,3 @@ states -> start, gameOver
 
 choices -> difficulty, numberOfCards
 
-
-
