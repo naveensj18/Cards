@@ -8,6 +8,7 @@ import { CardDetails } from "../../components/CardDetails";
 import { Result } from "../../components/Result";
 import { userWins } from "../../utils/userWins";
 import { getAttributeBasedOnDifficulty } from "../../utils/difficulty";
+import { Timer } from "../../components/Timer";
 
 let userFinalScore = 0;
 let computerFinalScore = 0;
@@ -23,6 +24,7 @@ function Game({ difficulty, numberOfCards }) {
   const [gameOver, setGameOver] = useState(false);
   const [currentAttribute, setCurrentAttribute] = useState(null);
   const [gameResult, setGameResult] = useState("");
+  const [timeUp, setTimeUp] = useState(false);
   let userScore = useRef(numberOfCards);
   let computerScore = useRef(numberOfCards);
   let userWinningRound = useRef(0);
@@ -96,6 +98,13 @@ function Game({ difficulty, numberOfCards }) {
     setCurrentAttribute(attribute);
   }
 
+  const handleTimeUp = () => {
+    setTimeUp(true);
+    alert("Time is up!, computer will choose the next card..");
+    setUserClick(true);
+    setCurrentAttribute(null);
+  };
+
   function handleRestartButtonClick() {
     setGameOver(false);
     setDeck(shuffleDeck(players));
@@ -137,12 +146,19 @@ function Game({ difficulty, numberOfCards }) {
               user="user"
               handleUserClick={handleUserClick}
               userClick={userClick}
+              currentAttribute={currentAttribute}
+              who="user"
             />
           )}
         </section>
-
         <section>
-          {userClick && !gameOver && <CardDetails data={computerCards[0]} />}
+          {userClick && !gameOver && (
+            <CardDetails
+              data={computerCards[0]}
+              currentAttribute={currentAttribute}
+              who="computer"
+            />
+          )}
         </section>
       </div>
 
@@ -161,6 +177,10 @@ function Game({ difficulty, numberOfCards }) {
         </div>
       )}
 
+      {!userClick && !timeUp && (
+        <Timer timeLimit={15} onTimeUp={handleTimeUp} />
+      )}
+
       <div className="next-round-container">
         {!gameOver && (
           <button
@@ -168,6 +188,7 @@ function Game({ difficulty, numberOfCards }) {
             onClick={() => {
               reassignCards(currentAttribute),
                 evaluateResult(userScore.current, computerScore.current);
+              setTimeUp(false);
             }}
             disabled={!userClick}
           >

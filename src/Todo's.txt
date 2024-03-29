@@ -6,9 +6,9 @@ Feature:
 3. choose number of cards - P1 - done 
 4. timer for each round - p3 
 5. Visibility to user on next cards in the queue - p3 
-6. draw deck for each round - p3 (not required for play online)
+6. draw deck for each round - p3 (not required for play online) 
 7. difficulty level hard - done 
-8. Add Instructions 
+8. Add Instructions - done
 
 Style:
 1. highlight winning attribute - P1 
@@ -33,7 +33,7 @@ git:
 Refactor: 
 1. To accommodate attributes irrespective of sport - done 
 2. Create components for score, result, other buttons - done
-3. seperate utils for difficulty and assignDeck - P3
+3. seperate utils for difficulty and assignDeck - done 
 
 Explore: 
 1. multiplayer options 
@@ -52,4 +52,16 @@ components -> choice, game, result
 states -> start, gameOver
 
 choices -> difficulty, numberOfCards
+
+DB:
+
+roomId: String
+    gameId: String
+        user1: Object
+        user2: Object
+
+entry point: anonymous with just name 
+
+post - cards 
+get - cards 
 

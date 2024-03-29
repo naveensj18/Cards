@@ -4,7 +4,7 @@ import Home from "./pages/HomePage/Home";
 import Game from "./pages/GamePage/Game";
 import Mode from "./pages/Mode/Mode";
 import { Choice } from "./pages/Mode/Choice";
-import { About } from "./pages/About";
+import { About } from "./pages/AboutPage/About";
 import TwoPlayerMode from "./pages/TwoPlayer/TwoPlayerMode";
 
 function App() {

@@ -1,10 +1,18 @@
 import React from "react";
 import "../App.css";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
-function Attribute({ attribute, value, onClick, isDisabled }) {
+function Attribute({
+  attribute,
+  value,
+  onClick,
+  isDisabled,
+  currentAttribute,
+  who,
+}) {
+  const shouldHighlight = currentAttribute === attribute;
   return (
-    <div className="attribute">
+    <div>
       <button
         onClick={onClick}
         disabled={isDisabled}
@@ -17,7 +25,15 @@ function Attribute({ attribute, value, onClick, isDisabled }) {
   );
 }
 
-export const CardDetails = ({ data, user, handleUserClick, userClick }) => {
+export const CardDetails = ({
+  data,
+  user,
+  handleUserClick,
+  userClick,
+  currentAttribute,
+  who,
+}) => {
+  console.log(who, "is rendering what", currentAttribute);
   const { Image, Name, Attributes } = data;
   const [isLoading, setIsLoading] = useState(true);
   const defaultImage =
@@ -52,6 +68,8 @@ export const CardDetails = ({ data, user, handleUserClick, userClick }) => {
                 user === "user" && handleUserClick(attribute);
               }}
               isDisabled={user === "user" && userClick}
+              currentAttribute={currentAttribute}
+              who={who}
             />
           ))}
         </div>
@@ -65,6 +83,8 @@ export const CardDetails = ({ data, user, handleUserClick, userClick }) => {
                 user === "user" && handleUserClick(attribute);
               }}
               isDisabled={user === "user" && userClick}
+              currentAttribute={currentAttribute}
+              who={who}
             />
           ))}
         </div>
