@@ -16,8 +16,6 @@ export const getAttributeBasedOnDifficulty = (
     case "medium":
       return getBestAttribute(selectedAttributes);
     case "hard":
-      console.log("difficulty hard: ");
-      console.log(memory, currentRound, selectedAttributes);
       console.log(
         "hard ...",
         getAttributeFromMemory(memory, currentRound, selectedAttributes)

@@ -1,0 +1,54 @@
+/* TwoPlayerMode.css */
+
+.Homepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.homepage-menu {
+  text-align: center;
+}
+
+.homepage-form {
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.homepage-join input,
+.homepage-create input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.game-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.green {
+  background-color: #4caf50;
+  color: white;
+}
+
+.green:hover {
+  background-color: #45a049;
+}
+
+.orange {
+  background-color: #ff9800;
+  color: white;
+}
+
+.orange:hover {
+  background-color: #e68a00;
+}

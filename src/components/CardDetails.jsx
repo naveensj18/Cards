@@ -33,7 +33,6 @@ export const CardDetails = ({
   currentAttribute,
   who,
 }) => {
-  console.log(who, "is rendering what", currentAttribute);
   const { Image, Name, Attributes } = data;
   const [isLoading, setIsLoading] = useState(true);
   const defaultImage =

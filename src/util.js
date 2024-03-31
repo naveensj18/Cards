@@ -64,7 +64,6 @@ const percentile = (selectedAttribute, selectedAttributeValue, attribute) => {
 };
 
 export function getBestAttribute(selectedAttributes) {
-  // console.log("inside getBestAttribute..", selectedAttributes);
   const attributesAndValues = {};
   const percentiles = [];
   for (var i = 0; i < availableAttributes.length; i++) {
@@ -97,22 +96,17 @@ export function getAttributeFromMemory(
   computerCardAttributes
 ) {
   let userCardAttributes = memory[currentRound + 1];
-  // console.log(
-  //   "checking if exists in memory ...",
-  //   "currenRound ->",
-  //   currentRound,
-  //   "userCard ->",
-  //   userCardAttributes,
-  //   "computerCard ->",
-  //   computerCardAttributes
-  // );
+  let best;
+  console.log("current round ->", currentRound, "memory ->", memory);
+  console.log(userCardAttributes);
+  console.log(computerCardAttributes);
   if (currentRound + 1 in memory) {
     for (var i = 0; i < availableAttributes.length; i++) {
       if (
         userCardAttributes[availableAttributes[i]] ===
         computerCardAttributes[availableAttributes[i]]
       ) {
-        continue;
+        best = availableAttributes[i];
       } else if (
         !userWins(
           userCardAttributes,
@@ -124,5 +118,5 @@ export function getAttributeFromMemory(
       }
     }
   }
-  return null;
+  return best ? best : null;
 }
