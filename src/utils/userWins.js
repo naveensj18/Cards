@@ -4,7 +4,10 @@ import { BBI } from "./BBI";
 export const userWins = (user, computer, attribute) => {
   switch (attributeTypes[attribute]) {
     case "HIGH":
-      return user[attribute] > computer[attribute];
+      return (
+        (user[attribute] === "-" ? 0 : user[attribute]) >
+        (computer[attribute] === "-" ? 0 : computer[attribute])
+      );
     case "LOW":
       return (
         (user[attribute] === "-" ? 1000 : user[attribute]) <

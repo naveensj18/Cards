@@ -15,4 +15,6 @@ export const attributeTypes = {
   BwAvg: "LOW",
   Fifers: "HIGH",
   Catch: "HIGH",
+  SR: "HIGH",
+  Econ: "LOW",
 };
