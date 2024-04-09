@@ -220,7 +220,7 @@ function Game({ difficulty, numberOfCards }) {
       {!gameOver && (
         <div>
           <p className="round-results">
-            Your cards: {userScore.current} cards remaining
+            You have {userScore.current} cards remaining
           </p>
           <p className="round-results">
             Computer has {computerScore.current} cards remaining

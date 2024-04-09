@@ -8,10 +8,11 @@ function Home() {
       <Link to="/Mode" className="play-online-button">
         <button>Play Online</button>
       </Link>
-      <Link className="play-with-friends-button">
-        <button onClick={() => window.alert("This mode is not available yet")}>
-          Play with Friends
-        </button>
+      <Link
+        className="play-with-friends-button"
+        to="https://card-game-qa4y.onrender.com"
+      >
+        <button>Play with Friends</button>
       </Link>
       <Link to="/About" className="about-link">
         About
